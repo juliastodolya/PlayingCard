@@ -13,6 +13,8 @@
 		A3A9A21C25B0926100FEAF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A9A21A25B0926100FEAF28 /* Main.storyboard */; };
 		A3A9A21E25B0926A00FEAF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A9A21D25B0926A00FEAF28 /* Assets.xcassets */; };
 		A3A9A22125B0926A00FEAF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A9A21F25B0926A00FEAF28 /* LaunchScreen.storyboard */; };
+		A3A9A22B25B09E1900FEAF28 /* PlayingCard​.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9A22A25B09E1900FEAF28 /* PlayingCard​.swift */; };
+		A3A9A22E25B0A3D400FEAF28 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9A22D25B0A3D400FEAF28 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A3A9A21D25B0926A00FEAF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A9A22025B0926A00FEAF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A9A22225B0926A00FEAF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A9A22A25B09E1900FEAF28 /* PlayingCard​.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayingCard​.swift"; sourceTree = "<group>"; };
+		A3A9A22D25B0A3D400FEAF28 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		A3A9A21325B0926100FEAF28 /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				A3A9A21425B0926100FEAF28 /* AppDelegate.swift */,
+				A3A9A22925B09DC300FEAF28 /* Supporting files */,
 				A3A9A21625B0926100FEAF28 /* SceneDelegate.swift */,
 				A3A9A21825B0926100FEAF28 /* ViewController.swift */,
 				A3A9A21A25B0926100FEAF28 /* Main.storyboard */,
 				A3A9A21D25B0926A00FEAF28 /* Assets.xcassets */,
-				A3A9A21F25B0926A00FEAF28 /* LaunchScreen.storyboard */,
 				A3A9A22225B0926A00FEAF28 /* Info.plist */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		A3A9A22925B09DC300FEAF28 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A3A9A21425B0926100FEAF28 /* AppDelegate.swift */,
+				A3A9A21F25B0926A00FEAF28 /* LaunchScreen.storyboard */,
+				A3A9A22A25B09E1900FEAF28 /* PlayingCard​.swift */,
+				A3A9A22D25B0A3D400FEAF28 /* PlayingCardDeck.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			files = (
 				A3A9A21925B0926100FEAF28 /* ViewController.swift in Sources */,
 				A3A9A21525B0926100FEAF28 /* AppDelegate.swift in Sources */,
+				A3A9A22E25B0A3D400FEAF28 /* PlayingCardDeck.swift in Sources */,
+				A3A9A22B25B09E1900FEAF28 /* PlayingCard​.swift in Sources */,
 				A3A9A21725B0926100FEAF28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Julia-Stodolya.PlayingCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Julia-Stodolya.PlayingCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
